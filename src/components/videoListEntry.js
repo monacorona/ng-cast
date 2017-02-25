@@ -8,7 +8,8 @@ angular.module('video-player')
   return {
     // TODO
     scope: {
-      video: '<'
+      video: '<',
+      onClick: '<'
     },
     controllerAs: 'ctrl',
     bindToController: true,

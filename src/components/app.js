@@ -4,7 +4,7 @@ angular.module('video-player')
 //   $scope.videos = window.exampleVideoData;
 // })
 .controller('appView', function($scope) {
-  
+ 
 })
 
 
@@ -17,6 +17,9 @@ angular.module('video-player')
     bindToController: true,
     controller: function($scope) {
       this.videos = window.exampleVideoData;
+      this.onClick = function () {
+        console.log('inside onClick function');
+      };
       console.log('app:', $scope);
     },
     templateUrl: 'src/templates/app.html'

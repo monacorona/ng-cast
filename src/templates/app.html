@@ -9,9 +9,10 @@
       <video-player><h5><em>videoPlayer</em> component goes here</h5></video-player>
     </div>
     <div class="col-md-5">
-      <div class ="videoList">
+      <div class ="videoList"'>
         <video-list
           videos="props.videos"
+          on-click="props.onClick"
         >
         </video-list>
       </div>
