@@ -2,7 +2,7 @@ angular.module('video-player')
 
 .controller('videoList', function($scope) {
   $scope.onClick = function () {
-    
+    console.log('inside onClick function');
   };
 })
 
@@ -15,7 +15,7 @@ angular.module('video-player')
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function($scope) {
-      console.log('videoList:', $scope);
+      console.log('videoList:', $scope.onClick);
     },
     templateUrl: 'src/templates/videoList.html'
   };
