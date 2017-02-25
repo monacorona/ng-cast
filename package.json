@@ -5,6 +5,9 @@
   "author": "Hack Reactor <curriculum.team@hackreactor.com>",
   "license": "UNLICENSED",
   "private": true,
+  "start": {
+    "live":"npm install -g live-server"
+    },
   "scripts": {
     "test": "karma start",
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
