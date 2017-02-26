@@ -14,7 +14,7 @@ angular.module('video-player')
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function($scope) {
-      console.log('videoListEntry:', $scope);
+      // console.log('videoListEntry:', $scope);
     },
     templateUrl: 'src/templates/videoListEntry.html' 
   };

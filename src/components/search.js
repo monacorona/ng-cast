@@ -2,7 +2,7 @@ angular.module('video-player')
 
 .controller('search', function($scope) {
   this.result = function () {
-
+  
   };
 })
 
@@ -13,7 +13,7 @@ angular.module('video-player')
       result: '<'
     },
     controller: 'search',
-    controllerAs: 'ctlr',
+    controllerAs: 'ctrl',
     bindToController: true,
     templateUrl: 'src/templates/search.html'
   };

@@ -1,6 +1,7 @@
 angular.module('video-player')
 
 .controller('videoList', function($scope) {
+  
 })
 
 .directive('videoList', function() {
