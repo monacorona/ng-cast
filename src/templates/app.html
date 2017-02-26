@@ -6,13 +6,16 @@
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player><h5><em>videoPlayer</em> component goes here</h5></video-player>
+      <video-player 
+        select-video = "ctrl.currentVideo"
+      >
+      </video-player>
     </div>
     <div class="col-md-5">
       <div class ="videoList"'>
         <video-list
-          videos="props.videos"
-          on-click="props.onClick"
+          videos="ctrl.videos"
+          on-click="ctrl.onClick"
         >
         </video-list>
       </div>

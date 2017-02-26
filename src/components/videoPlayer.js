@@ -1,16 +1,20 @@
 angular.module('video-player')
 
+.controller('VideoPlayerCtrl', function() {
+  console.log('videoPlayer', this);
+
+})
+
 .directive('videoPlayer', function() {
   return {
     // TODO
     scope: {
-      video: '<'
+      video: '<',
+      selectVideo: '<'
     },
+    controller: 'VideoPlayerCtrl',
     controllerAs: 'ctrl',
     bindToController: true,
-    controller: function($scope) {
-      console.log($scope);
-    },
     templateUrl: 'src/templates/videoPlayer.html'
   };
 });
